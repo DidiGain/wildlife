@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'),
+    url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('./assets/fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'),
+    url('./assets/fonts/OpenSans-Semibold.woff') format('woff2'),
+    url('./assets/fonts/OpenSans-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'),
+    url('./assets/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Roboto-Regular.woff') format('woff');
+}
