@@ -44,7 +44,7 @@ body {
   font-weight: 400;
   line-height: 36px;
 
-  color: white;
+  color: var(--white-color);
 }
 
 h1 {
@@ -57,7 +57,6 @@ h1 {
 
 h2 {
   font-size: 48px;
-  font-family: 'OpenSans';
   font-weight: 400;
 
   color: var(--dark-color);
@@ -66,6 +65,7 @@ h2 {
 h3 {
   font-size: 27px;
   line-height: 40.5px;
+  font-weight: 400;
   color: var(--dark-color);
 }
 
@@ -76,7 +76,7 @@ h4 {
 }
 
 .btn {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
 
   border-radius: 5px;
@@ -251,26 +251,31 @@ h4 {
   height: 39px;
 
   position: absolute;
-  top: 30%;
-  transform: translate(0 -50%);
 
   content: '';
 
   fill: var(--dark-color);
-}
-
-.arrow:hover {
-  top: 28%;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .left-arrow {
+  top: 25%;
+
   left: 0;
   background: url('./assets/img/left-arrow.svg') no-repeat;
 }
 
 .right-arrow {
+  top: 25%;
+
   right: 0;
   background: url('./assets/img/right-arrow.svg') no-repeat;
+}
+
+.arrow:hover {
+  top: 26%;
+  opacity: 1.0;
 }
 
 /* GET NOTIFIED */
@@ -278,6 +283,44 @@ h4 {
   text-align: center;
 
   background-color: #CCC;
+}
+
+.get-notified__title {
+ margin-bottom: 59px;
+}
+
+form {
+  padding-bottom: 240px;
+}
+
+input {
+  height: 60px;
+
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  line-height: 27px;
+
+  border: none;
+}
+
+input[type="email"] {
+  width: 510px;
+
+  padding-left: 15px;
+
+  background-color: transparent;
+  border: 1px var(--light-grey-color) solid;
+}
+
+input[type="submit"] {
+  width: 120px;
+
+  margin-left: -8px;
+
+  background-color: var(--orange-color);
+  color: inherit;
+
+  border-radius: 0px 5px 5px 0px;
 }
 
 /* FOOTER */
