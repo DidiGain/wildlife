@@ -115,15 +115,36 @@ h4 {
 
 }
 
-/* TOP-WRAPPER */
+/* WRAPPER COLORS*/
+.wrapper-color__one {
+  background-color: var(--top-bg-color);
+}
 
-.top-wrapper {
+.wrapper-color__two {
+  background-color: var(--medium-bg-color);
+}
+
+.wrapper-color__three {
+  background-color: var(--footer-bg-color);
+}
+
+.wrapper-main {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-main__one {
+  min-height: 779px;
   padding-top: 19px;
 
   background-image: url('./assets/img/hero.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.wrapper-shadow {
+  box-shadow: 0 0 40px rgba(0, 0, 0, .1);
 }
 
 /* HEADER */
@@ -351,7 +372,6 @@ input[type="submit"]:hover {
 footer {
   padding: 150px 0 149px;
 
-  background-color: var(--footer-bg-color);
   background: url('./assets/img/footer.jpg');
 }
 
