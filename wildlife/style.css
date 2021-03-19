@@ -53,7 +53,6 @@ body {
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;
 
   color: var(--white-color);
 }
@@ -62,6 +61,12 @@ h1 {
   margin-bottom: 51px;
 
   font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 2px;
+
+
   font-family: 'OpenSans Semibold', sans-serif;
   color: var(--orange-color);
 }
@@ -69,6 +74,7 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 400;
+  line-height: 72px;
 
   color: var(--dark-color);
 }
@@ -82,6 +88,7 @@ h3 {
 
 h4 {
   font-size: 22px;
+  line-height: 36px;
 
   color: var(--white-color);
 }
@@ -167,11 +174,9 @@ h4 {
 }
 
 /* HEADER */
-header {
-  height: 60px;
-}
-
 .header {
+  height: 60px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,6 +268,7 @@ header {
   margin-bottom: 120px;
 
   font-size: 24px;
+  line-height: 36px;
 
   color: var(--light-grey-color);
 }
@@ -292,16 +298,18 @@ header {
 }
 
 .card-text {
-  width: 200px;
+  width: 186px;
 
   position: absolute;
-  content: '';
+
   top: 247px;
   left: 50%;
   transform: translate(-50%);
 }
 
 .card__subtitle {
+  margin-top: 10px;
+
   font-size: 17px;
   line-height: 27px;
 
@@ -313,8 +321,7 @@ header {
   height: 39px;
 
   position: absolute;
-
-  content: '';
+  top: 27%;
 
   fill: var(--dark-color);
   opacity: 0.6;
@@ -322,15 +329,11 @@ header {
 }
 
 .left-arrow {
-  top: 25%;
-
   left: 0;
   background: url('./assets/icons/left-arrow.svg') no-repeat;
 }
 
 .right-arrow {
-  top: 25%;
-
   right: 0;
   background: url('./assets/icons/right-arrow.svg') no-repeat;
 }
@@ -366,7 +369,7 @@ input {
 }
 
 input[type="email"] {
-  width: 510px;
+  width: 540px;
 
   padding-left: 15px;
 
@@ -376,6 +379,12 @@ input[type="email"] {
 
 input[type="email"]:focus {
   border: 4px solid var(--orange-color);
+}
+
+input[type="email"]::placeholder {
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  line-height: 26.95px;
 }
 
 input[type="submit"] {
