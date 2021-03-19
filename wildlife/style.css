@@ -7,6 +7,9 @@
   --dark-color: #333333;
   --light-grey-color: #666666;
   --white-color: #f7f7f7;
+
+  --orange-light-color: #E39128;
+  --brown-color: #8F5613;
 }
 
 *,
@@ -41,14 +44,6 @@ a:hover {
 img {
   display: block;
   max-width: 100%;
-}
-
-button {
-  color: inherit;
-}
-
-button:hover {
-  text-decoration: underline;
 }
 
 body {
@@ -95,24 +90,48 @@ h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
 
+  color: inherit;
+
   border-radius: 5px;
 
   cursor: pointer;
 }
 
-.btn-donate {
+.btn:hover {
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--brown-color);
+  color: inherit;
+}
+
+.survival-button {
   width: 160px;
   height: 60px;
 
   line-height: 25.95px;
-  background-color: var(--orange-color);
   border: none;
+}
+
+.btn-orange {
+  background-color: var(--orange-color);
+  color: inherit;
+}
+
+.btn-orange:hover {
+  background-color: var(--orange-light-color);
+}
+
+.btn-orange:active {
+  background-color: var(--brown-color);
 }
 
 .container {
   margin: 0 auto;
   width: 1200px;
-
 }
 
 /* WRAPPER COLORS*/
@@ -148,6 +167,9 @@ h4 {
 }
 
 /* HEADER */
+header {
+  height: 60px;
+}
 
 .header {
   display: flex;
@@ -167,6 +189,7 @@ h4 {
 }
 
 .header__logo p {
+  font-size: 32px;
   margin-left: 15px;
 }
 
@@ -192,6 +215,8 @@ h4 {
 
 .sign-in-btn {
   padding: 8px 23px;
+
+  background-color: transparent;
   border: 2px var(--orange-color) solid;
 }
 
@@ -357,9 +382,6 @@ input[type="submit"] {
   width: 120px;
 
   margin-left: -8px;
-
-  background-color: var(--orange-color);
-  color: inherit;
 
   border-radius: 0px 5px 5px 0px;
 }
